@@ -2,11 +2,12 @@
 
 const socket = io()
 
+let newuser = prompt('Please enter name');
 // Send a message to say that I've connected
-socket.emit('newuser', {user: 'Grace Hopper'})
+socket.emit('newuser', newuser)
 
 // Event listener, waiting for an incoming "newuser"
-socket.on('newuser', (data) => console.log(`${data.user} has connected!`))
+socket.on('newuser', (data) => console.log(`${newuser} has connected!`))
 
 
 // Listen for the 'submit' of a form
@@ -31,5 +32,5 @@ socket.on('chatmsg', (data) => {
 	const newMsg = document.createElement('li')
 	$msgList.appendChild(newMsg)
 
-	newMsg.textContent = data.msg
+	newMsg.textContent = (`${newuser} -> ${data.msg}`)
 })
