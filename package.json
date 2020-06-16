@@ -4,19 +4,20 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wddm-w20/chat-app.git"
+    "url": "git+https://github.com/Naveen-Koul/chat-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wddm-w20/chat-app/issues"
+    "url": "https://github.com/Naveen-Koul/chat-app/issues"
   },
-  "homepage": "https://github.com/wddm-w20/chat-app#readme",
+  "homepage": "https://github.com/Naveen-Koul/chat-app#readme",
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
