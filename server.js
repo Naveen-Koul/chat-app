@@ -22,7 +22,7 @@ io.on('connection', function (socket) {
     socket.broadcast.emit('newuser', data)
 
     // The same message, sent to all users - try it!
-    //io.emit('newuser', data)
+    io.emit('newuser', data)
 	})
 	 
 	
