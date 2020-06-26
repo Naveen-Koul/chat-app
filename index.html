@@ -13,14 +13,18 @@
 
 		<!-- Form: Input field, send button, 
 				 Messages: ordered list -->
-		<form id="sendMsg">
-			<input type="text" placeholder="Type Message" id="txt">
-			<button type="submit">Send</button>
-		</form>
-
-		<ol id="messages"></ol>
-
-		<script src="/socket.io/socket.io.js"></script>
-		<script src="js/index.js"></script>
+				 <form id="enterName" class='name-box'>
+					<input type="text" name="username" class='name-box' id="username" placeholder="Please enter you Name">
+					<button type="submit" class='name-box'>Enter</button>
+				</form>
+		
+				<form id="sendMsg">
+					<input type="text" placeholder="Type Message" id="txt">
+					<button type="submit">Send</button>
+				</form>
+		
+				<ol id="messages"></ol>
+				<script src="/socket.io/socket.io.js"></script>
+				<script src="js/index.js"></script>
 	</body>
 </html>
